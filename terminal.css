@@ -1,0 +1,85 @@
+.terminal {
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+  box-sizing: border-box;
+  max-width: 550px;
+  height: 210px;
+  margin: 0 auto;
+  background-color: #272a3aa6;
+}
+
+.terminal > .fakeMenu {
+  box-sizing: border-box;
+  height: 25px;
+  background-color: #1b1e2d;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font-family: initial;
+}
+
+.terminal > .fakeMenu > .fakeButtons {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  top: 6px;
+  left: 6px;
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+}
+
+.terminal > .fakeMenu > .fakeMinimize {
+  left: 11px;
+  background-color: #ffc100;
+  border-color: #9d802c;
+}
+
+.terminal > .fakeMenu > .fakeZoom {
+  left: 16px;
+  background-color: #00d742;
+  border-color: #049931;
+}
+
+.terminal > .fakeScreen {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.terminal > .fakeScreen > pre {
+  background-color: initial;
+  margin: initial;
+  padding: initial;
+  overflow-x: initial;
+}
+
+.terminal > .fakeScreen > pre > code {
+  background: initial;
+  background-color: initial;
+  overflow: hidden;
+  margin: initial;
+  padding: initial;
+}
+
+.terminal > .fakeScreen > p {
+  color: #9CD9F0;
+  position: relative;
+  left: 50%;
+  margin-left: -8.5em;
+  text-align: left;
+  font-size: 1.25em;
+  font-family: monospace;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.starbar {
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: center;
+}

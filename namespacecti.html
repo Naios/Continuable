@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115514125-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115514125-1');
+  </script>
+
+  <meta charset="UTF-8" />
+  <title>cti namespace | Continuable</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="m-dark+doxygen.compiled.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="terminal.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="atom-one-dark.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#23373B" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Continuable <span class="m-thin">4.1.0</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li>
+              <a href="tutorial.html">Tutorial</a>
+              <ol>
+                <li><a href="tutorial-creating-continuables.html">Creating continuables</a></li>
+                <li><a href="tutorial-chaining-continuables.html">Chaining continuables</a></li>
+                <li><a href="tutorial-connecting-continuables.html">Connecting continuables</a></li>
+                <li><a href="tutorial-transforming-continuables.html">Transforming continuables</a></li>
+                <li><a href="tutorial-awaiting-continuables.html">Awaiting continuables</a></li>
+                <li><a href="tutorial-promisify-continuables.html">Promisify functions</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="pages.html">Pages</a>
+              <ol>
+                <li><a href="installation.html">Installation</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="configuration.html">Configuration</a></li>
+                <li><a href="changelog.html">Changelog</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="modules.html">Modules</a>
+              <ol>
+                <li><a href="group___base.html">Base</a></li>
+                <li><a href="group___connections.html">Connections</a></li>
+                <li><a href="group___promisify.html">Promisify</a></li>
+                <li><a href="group___testing.html">Testing</a></li>
+                <li><a href="group___types.html">Types</a></li>
+                <li><a href="group___transforms.html">Transforms</a></li>
+                <li><a href="group___traversal.html">Traversal</a></li>
+              </ol>
+            </li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li>
+              <a href="namespacecti.html" id="m-navbar-current">cti</a>
+              <ol>
+                <li><a href="namespacecti_1_1transforms.html">cti::transforms</a></li>
+                <li><a href="classcti_1_1continuable__base.html">cti::continuable_base</a></li>
+                <li><a href="classcti_1_1promise__base.html">cti::promise_base</a></li>
+              </ol>
+            </li>
+            <li class="m-show-m"><a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+            </svg> Search</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none">
+            <li>
+              <a href="https://github.com/Naios/continuable" aria-label="View source on Github"><i class="fa fa-github"></i> Code</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          cti <span class="m-thin">namespace</span>
+        </h1>
+        <p>Declares the continuable library namespace.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#namespaces">Namespaces</a></li>
+                <li><a href="#nested-classes">Classes</a></li>
+                <li><a href="#typedef-members">Typedefs</a></li>
+                <li><a href="#func-members">Functions</a></li>
+                <li><a href="#var-members">Variables</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>The most important class is <a href="classcti_1_1continuable__base.html" class="m-dox">cti::<wbr />continuable_base</a>, that provides the whole functionality for continuation chaining.</p><p>The class <a href="classcti_1_1continuable__base.html" class="m-dox">cti::<wbr />continuable_base</a> is created through the <a href="group___base.html#gaf47869ea139d88976af5b9654d6d61c0" class="m-dox">cti::<wbr />make_continuable()</a> function which accepts a callback taking function.</p><p>Also there are following support functions available:</p><ul><li><a href="group___connections.html#gaef652b8561f76cad49e83cfa21a71734" class="m-dox">cti::<wbr />when_all()</a> - connects <a href="classcti_1_1continuable__base.html" class="m-dox">cti::<wbr />continuable_base</a>&#x27;s to an <code>all</code> connection.</li><li><a href="group___connections.html#ga313760e876d0cbc766b41f6b192544bb" class="m-dox">cti::<wbr />when_any()</a> - connects <a href="classcti_1_1continuable__base.html" class="m-dox">cti::<wbr />continuable_base</a>&#x27;s to an <code>any</code> connection.</li><li><a href="group___connections.html#ga481c31024079b6074617c64b16e615dd" class="m-dox">cti::<wbr />when_seq()</a> - connects <a href="classcti_1_1continuable__base.html" class="m-dox">cti::<wbr />continuable_base</a>&#x27;s to a sequence.</li></ul>
+        <section id="namespaces">
+          <h2><a href="#namespaces">Namespaces</a></h2>
+          <dl class="m-dox">
+            <dt>namespace <a href="namespacecti_1_1transforms.html" class="m-dox">transforms</a></dt>
+            <dd>The namespace transforms declares callable objects that transform any <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a> to an object or to a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a> itself.</dd>
+          </dl>
+        </section>
+        <section id="nested-classes">
+          <h2><a href="#nested-classes">Classes</a></h2>
+          <dl class="m-dox">
+            <dt>
+              struct <a href="structcti_1_1cancellation__result.html" class="m-dox">cancellation_result</a>
+            </dt>
+            <dd>A class which is convertible to any <a href="classcti_1_1result.html" class="m-dox">result</a> and that definitely holds a default constructed exception which signals the cancellation of the asynchronous control flow.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename Data, typename Annotation&gt;</div>
+              class <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_base</a>
+            </dt>
+            <dd>The main class of the continuable library, it provides the functionality for chaining callbacks and continuations together to a unified hierarchy.</dd>
+            <dt>
+              struct <a href="structcti_1_1empty__result.html" class="m-dox">empty_result</a>
+            </dt>
+            <dd>A class which is convertible to any <a href="classcti_1_1result.html" class="m-dox">result</a> and that definitely holds no value so the real result gets invalidated when this object is passed to it.</dd>
+            <dt>
+              struct <a href="structcti_1_1exception__arg__t.html" class="m-dox">exception_arg_t</a>
+            </dt>
+            <dd>Represents the tag type that is used to disambiguate the callback operator() in order to take the exception asynchronous chain.</dd>
+            <dt>
+              class <a href="classcti_1_1exceptional__result.html" class="m-dox">exceptional_result</a>
+            </dt>
+            <dd>A class which is convertible to any result and that holds an exception which is then passed to the converted result object.</dd>
+            <dt>
+              struct <a href="structcti_1_1is__ready__arg__t.html" class="m-dox">is_ready_arg_t</a>
+            </dt>
+            <dd>Represents the tag type that is used to query the continuation for whether it resolves the callback instantly with its arguments without having side effects.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename Data, typename Hint&gt;</div>
+              class <a href="classcti_1_1promise__base.html" class="m-dox">promise_base</a>
+            </dt>
+            <dd>The <a href="classcti_1_1promise__base.html" class="m-dox">promise_<wbr />base</a> makes it possible to resolve an asynchronous continuable through it&#x27;s result or through an error type.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Result&gt;</div>
+              class <a href="classcti_1_1promisify.html" class="m-dox">promisify</a>
+            </dt>
+            <dd>Helper class for converting callback taking callable types into a a continuable. Various styles are supported.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... T&gt;</div>
+              class <a href="classcti_1_1result.html" class="m-dox">result</a>
+            </dt>
+            <dd>The result class can carry the three kinds of results an asynchronous operation possibly can return, it&#x27;s implemented in a variant like data structure which is also specialized to hold arbitrary arguments.</dd>
+            <dt>
+              struct <a href="structcti_1_1unpack__arg__t.html" class="m-dox">unpack_arg_t</a>
+            </dt>
+            <dd>Represents the tag type that is used to unpack the result of a continuation.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename Mapper = detail::asio::map_default&gt;</div>
+              struct <a href="structcti_1_1use__continuable__t.html" class="m-dox">use_continuable_t</a>
+            </dt>
+            <dd>Type used as an ASIO completion token to specify an asynchronous operation that should return a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a>.</dd>
+          </dl>
+        </section>
+        <section id="typedef-members">
+          <h2><a href="#typedef-members">Typedefs</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <div class="m-dox-template">template&lt;typename T&gt;</div>
+              using <a href="group___base.html#gabe4e73c301a2697d9252c400194474e0" class="m-dox">is_continuable</a> = detail::base::is_continuable&lt;T&gt;
+            </dt>
+            <dd>Deduces to a true_type if the given type is a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a>.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              using <a href="group___primitives.html#ga0471bc4c43101c3f077c0601c617abce" class="m-dox">signature_arg_t</a> = detail::identity&lt;Args...&gt;
+            </dt>
+            <dd>Represents the tag type that is used to specify the signature hint of a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a> or <a href="classcti_1_1promise__base.html" class="m-dox">promise_<wbr />base</a>.</dd>
+            <dt>
+              using <a href="group___primitives.html#ga2d717de3efb8ff74889a603bf141cbad" class="m-dox">query_arg_t</a> = <a href="structcti_1_1unpack__arg__t.html" class="m-dox">unpack_<wbr />arg_<wbr />t</a> <span class="m-label m-danger">deprecated</span>
+            </dt>
+            <dd>Represents the tag type that is used to unpack the result of a continuation.</dd>
+            <dt>
+              using <a href="group___primitives.html#gab374e033adf83bc3883410b9857cca41" class="m-dox">dispatch_error_tag</a> = <a href="structcti_1_1exception__arg__t.html" class="m-dox">exception_<wbr />arg_<wbr />t</a> <span class="m-label m-danger">deprecated</span>
+            </dt>
+            <dd>Represents the tag type that is used to disambiguate the callback operator() in order to take the exception asynchronous chain.</dd>
+            <dt>
+              using <a href="group___primitives.html#ga9fa0d3597f70a7b9e763639f0b30dee1" class="m-dox">exception_t</a> = detail::types::exception_t
+            </dt>
+            <dd>Represents the type that is used as exception type.</dd>
+            <dt>
+              using <a href="group___primitives.html#ga0220315293d1e2ebbda6be95fb3b2eeb" class="m-dox">error_type</a> = <a href="group___primitives.html#ga9fa0d3597f70a7b9e763639f0b30dee1" class="m-dox">exception_<wbr />t</a> <span class="m-label m-danger">deprecated</span>
+            </dt>
+            <dd>Represents the type that is used as exception type.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename T&gt;</div>
+              using <a href="group___primitives.html#gadd542364566ec6cc22a4b92c47889443" class="m-dox">plain_t</a> = detail::types::plain_tag&lt;T&gt;
+            </dt>
+            <dd>Represents the type that is used to disable the special meaning of types which are returned by a asynchronous result handler. See cti::plain for details.</dd>
+            <dt>
+              using <a href="group___result.html#gaa4a7d06dc54b9058d15bf46305e4f282" class="m-dox">void_arg_t</a> = detail::void_arg_t
+            </dt>
+            <dd>A tag which represents present void values in result.</dd>
+            <dt>
+              using <a href="group___traversal.html#ga170b41a7aacd94036f9da0af42c6558d" class="m-dox">async_traverse_visit_tag</a> = detail::traversal::async_traverse_visit_tag
+            </dt>
+            <dd>A tag which is passed to the <code>operator()</code> of the visitor if an element is visited synchronously through <a href="group___traversal.html#ga02922d0c5bf7a18340069b3500a0cf90" class="m-dox">traverse_<wbr />pack_<wbr />async</a>.</dd>
+            <dt>
+              using <a href="group___traversal.html#gacc6d0dce8126550436303d433c96b1d7" class="m-dox">async_traverse_detach_tag</a> = detail::traversal::async_traverse_detach_tag
+            </dt>
+            <dd>A tag which is passed to the <code>operator()</code> of the visitor if an element is visited after the traversal was detached through <a href="group___traversal.html#ga02922d0c5bf7a18340069b3500a0cf90" class="m-dox">traverse_<wbr />pack_<wbr />async</a>.</dd>
+            <dt>
+              using <a href="group___traversal.html#ga1c9f6c5ba9ffb68ff36a1f95b78e7d3a" class="m-dox">async_traverse_complete_tag</a> = detail::traversal::async_traverse_complete_tag
+            </dt>
+            <dd>A tag which is passed to the <code>operator()</code> of the visitor if the asynchronous pack traversal was finished through <a href="group___traversal.html#ga02922d0c5bf7a18340069b3500a0cf90" class="m-dox">traverse_<wbr />pack_<wbr />async</a>.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename T&gt;</div>
+              using <a href="group___traversal.html#gaf67b511265fa74dc4b117cdb1ce9d1e3" class="m-dox">async_traverse_in_place_tag</a> = detail::traversal::async_traverse_in_place_tag&lt;T&gt;
+            </dt>
+            <dd>A tag to identify that a mapper shall be constructed in-place from the first argument passed to <a href="group___traversal.html#ga02922d0c5bf7a18340069b3500a0cf90" class="m-dox">traverse_<wbr />pack_<wbr />async</a>.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              using <a href="group___types.html#ga4e33254143db6484c753a19662f933aa" class="m-dox">continuation_capacity</a> = detail::erasure::continuation_capacity&lt;Args...&gt;
+            </dt>
+            <dd>Deduces to the preferred continuation capacity for a possible small functor optimization. The given capacity size is always enough to to avoid any allocation when storing a ready <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a>.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              using <a href="group___types.html#ga95d2328ba27fe194491b52073b58be50" class="m-dox">continuable</a> = <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a>&lt;detail::erasure::continuation&lt;Args...&gt;, <a href="group___primitives.html#ga0471bc4c43101c3f077c0601c617abce" class="m-dox">signature_<wbr />arg_<wbr />t</a>&lt;Args...&gt;&gt;
+            </dt>
+            <dd>Defines a non-copyable continuation type which uses the function2 backend for type erasure.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              using <a href="group___types.html#gaaed43cf7309b600464b10fde4a3df0de" class="m-dox">promise</a> = <a href="classcti_1_1promise__base.html" class="m-dox">promise_<wbr />base</a>&lt;detail::erasure::callback&lt;Args...&gt;, <a href="group___primitives.html#ga0471bc4c43101c3f077c0601c617abce" class="m-dox">signature_<wbr />arg_<wbr />t</a>&lt;Args...&gt;&gt;
+            </dt>
+            <dd>Defines a non-copyable promise type which is using the function2 backend for type erasure.</dd>
+            <dt>
+              using <a href="group___types.html#ga95694d77afbef8b5a715b9e715ffdeb9" class="m-dox">work</a> = <a href="classcti_1_1promise__base.html" class="m-dox">promise_<wbr />base</a>&lt;detail::erasure::work, <a href="group___primitives.html#ga0471bc4c43101c3f077c0601c617abce" class="m-dox">signature_<wbr />arg_<wbr />t</a>&lt;&gt;&gt;
+            </dt>
+            <dd>Defines a non-copyable type erasure which is capable of carrying callable objects passed to executors.</dd>
+            <dt>
+              using <a href="#a637f3ade8400faa575b4a6ef584f4431" class="m-dox">asio_error_code_t</a> = detail::asio::error_code_t
+            </dt>
+            <dd>The error code type used by your asio distribution.</dd>
+            <dt>
+              using <a href="#a33044c007ff02f6324954167003f5c36" class="m-dox">asio_basic_errors_t</a> = detail::asio::basic_errors_t
+            </dt>
+            <dd>The basic error code enum used by your asio distribution.</dd>
+            <dt>
+              using <a href="#a8681a592a8360d66100a7e72e555bf4f" class="m-dox">asio_system_error_t</a> = detail::asio::system_error_t
+            </dt>
+            <dd>The system error type used by your asio distribution.</dd>
+            <dt>
+              using <a href="#a4d0da7830d56f4e638a2dc23d1bc27db" class="m-dox">use_continuable_raw_t</a> = <a href="structcti_1_1use__continuable__t.html" class="m-dox">use_<wbr />continuable_<wbr />t</a>&lt;detail::asio::map_none&gt;
+            </dt>
+            <dd>Type used as an ASIO completion token to specify an asynchronous operation that should return a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a>.</dd>
+          </dl>
+        </section>
+        <section id="func-members">
+          <h2><a href="#func-members">Functions</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args, typename Continuation&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___base.html#gaf47869ea139d88976af5b9654d6d61c0" class="m-dox">make_continuable</a>(</span><span class="m-dox-wrap">Continuation&amp;&amp; continuation) -&gt; auto <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Creates a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a> from a promise/callback taking function.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___base.html#gaa1b6bcf17649b137e29c866ced3569c7" class="m-dox">make_ready_continuable</a>(</span><span class="m-dox-wrap">Args &amp;&amp; ... args) -&gt; auto</span>
+            </dt>
+            <dd>Returns a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a> with no result which instantly resolves the promise with no values.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args, typename Exception&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___base.html#ga41794c321aef916f4fd0fe4c36aa9e6e" class="m-dox">make_exceptional_continuable</a>(</span><span class="m-dox-wrap">Exception&amp;&amp; exception) -&gt; auto <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Returns a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a> with the parameterized result which instantly resolves the promise with the given error type.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Signature&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___base.html#ga7f0646a26ba7ee4ce1ac42caeef3caa1" class="m-dox">make_cancelling_continuable</a>(</span><span class="m-dox-wrap">) -&gt; auto</span>
+            </dt>
+            <dd>Returns a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a> with the parameterized result which never resolves its promise and thus cancels the asynchronous continuation chain through throwing a default constructed exception_t.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___base.html#gacc7ae86f30e3c0331861ce7871e310dd" class="m-dox">make_plain</a>(</span><span class="m-dox-wrap">T&amp;&amp; value) -&gt; auto</span>
+            </dt>
+            <dd>Can be used to disable the special meaning for a returned value in asynchronous handler functions.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___base.html#gacdc6a77a2ff98dabd7a2e9dc8c461934" class="m-dox">recover</a>(</span><span class="m-dox-wrap">Args &amp;&amp; ... args) -&gt; <a href="classcti_1_1result.html" class="m-dox">result</a>&lt;detail::traits::unrefcv_t&lt;Args&gt;...&gt;</span>
+            </dt>
+            <dd>Can be used to recover to from a failure handler, the result handler which comes after will be called with the corresponding result.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="group___base.html#ga9223cf1a04ca2d6950d83d0917192fa5" class="m-dox">rethrow</a>(</span><span class="m-dox-wrap"><a href="group___primitives.html#ga9fa0d3597f70a7b9e763639f0b30dee1" class="m-dox">exception_<wbr />t</a> exception) -&gt; <a href="classcti_1_1exceptional__result.html" class="m-dox">exceptional_<wbr />result</a></span>
+            </dt>
+            <dd>Can be used to rethrow an exception to the asynchronous continuation chain, the failure handler which comes after will be called with the corresponding exception.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="group___base.html#ga3c1710e55aab586d267f96a02f6cd014" class="m-dox">cancel</a>(</span><span class="m-dox-wrap">) -&gt; <a href="structcti_1_1cancellation__result.html" class="m-dox">cancellation_<wbr />result</a></span>
+            </dt>
+            <dd>Can be used to cancel an asynchronous continuation chain, the next failure handler which comes after cancel will be called with a default constructed exception_t object.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="group___base.html#gac20d32604949856659f84c06ebcaeb9e" class="m-dox">stop</a>(</span><span class="m-dox-wrap">) -&gt; <a href="structcti_1_1empty__result.html" class="m-dox">empty_<wbr />result</a></span>
+            </dt>
+            <dd>Can be used to stop an asynchronous continuation chain, no handler which comes after stop was received won&#x27;t be called.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___connections.html#gaef652b8561f76cad49e83cfa21a71734" class="m-dox">when_all</a>(</span><span class="m-dox-wrap">Args &amp;&amp; ... args) -&gt; auto</span>
+            </dt>
+            <dd>Connects the given arguments with an all logic. All continuables contained inside the given nested pack are invoked at once. On completion the final handler is called with the aggregated result of all continuables.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename Iterator, std::enable_if_t&lt;detail::range::is_iterator&lt;Iterator&gt;::value&gt;* = nullptr&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___connections.html#gaa39f871e8aa99953dc83fda92b449024" class="m-dox">when_all</a>(</span><span class="m-dox-wrap">Iterator begin,
+              Iterator end) -&gt; auto</span>
+            </dt>
+            <dd>Connects the given arguments with an all logic. The content of the iterator is moved out and converted to a temporary <code>std::vector</code> which is then passed to when_all.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___connections.html#ga481c31024079b6074617c64b16e615dd" class="m-dox">when_seq</a>(</span><span class="m-dox-wrap">Args &amp;&amp; ... args) -&gt; auto</span>
+            </dt>
+            <dd>Connects the given arguments with a sequential logic. All continuables contained inside the given nested pack are invoked one after one. On completion the final handler is called with the aggregated result of all continuables.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename Iterator, std::enable_if_t&lt;detail::range::is_iterator&lt;Iterator&gt;::value&gt;* = nullptr&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___connections.html#ga1d52caeca48122b5aebb276d0d47805a" class="m-dox">when_seq</a>(</span><span class="m-dox-wrap">Iterator begin,
+              Iterator end) -&gt; auto</span>
+            </dt>
+            <dd>Connects the given arguments with a sequential logic. The content of the iterator is moved out and converted to a temporary <code>std::vector</code> which is then passed to when_seq.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___connections.html#ga313760e876d0cbc766b41f6b192544bb" class="m-dox">when_any</a>(</span><span class="m-dox-wrap">Args &amp;&amp; ... args) -&gt; auto</span>
+            </dt>
+            <dd>Connects the given arguments with an any logic. All continuables contained inside the given nested pack are invoked at once. On completion of one continuable the final handler is called with the result of the resolved continuable.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename Iterator, std::enable_if_t&lt;detail::range::is_iterator&lt;Iterator&gt;::value&gt;* = nullptr&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___connections.html#ga580b6b0d4fd31371b2f37e0dc5bf039b" class="m-dox">when_any</a>(</span><span class="m-dox-wrap">Iterator begin,
+              Iterator end) -&gt; auto</span>
+            </dt>
+            <dd>Connects the given arguments with an any logic. The content of the iterator is moved out and converted to a temporary <code>std::vector</code> which is then passed to when_all.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;template&lt;typename, typename&gt; class C = std::vector, typename First, typename... Args&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___connections.html#ga4f6ecedf4b4ccd5e1c28d937ad717b32" class="m-dox">populate</a>(</span><span class="m-dox-wrap">First&amp;&amp; first,
+              Args &amp;&amp; ... args) -&gt; C&lt;std::decay_t&lt;First&gt;, std::allocator&lt;std::decay_t&lt;First&gt;&gt;&gt;</span>
+            </dt>
+            <dd>Populates a homogeneous container from the given arguments. All arguments need to be convertible to the first one, by default <code>std::vector</code> is used as container type.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;std::size_t I, typename... T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___result.html#ga8c47cc24b02abb222a8bd7739ec3920e" class="m-dox">get</a>(</span><span class="m-dox-wrap"><a href="classcti_1_1result.html" class="m-dox">result</a>&lt;T...&gt;&amp; result) -&gt; decltype(auto)</span>
+            </dt>
+            <dd>Returns the value at position I of the given result.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;std::size_t I, typename... T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___result.html#ga6d638c96597a30798bf74eb5a7968730" class="m-dox">get</a>(</span><span class="m-dox-wrap"><a href="classcti_1_1result.html" class="m-dox">result</a>&lt;T...&gt; const&amp; result) -&gt; decltype(auto)</span>
+            </dt>
+            <dd>Returns the value at position I of the given result.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;std::size_t I, typename... T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___result.html#ga61a97fe8e93c19e42f97396c6262281b" class="m-dox">get</a>(</span><span class="m-dox-wrap"><a href="classcti_1_1result.html" class="m-dox">result</a>&lt;T...&gt;&amp;&amp; result) -&gt; decltype(auto)</span>
+            </dt>
+            <dd>Returns the value at position I of the given result.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... T, typename Result = result&lt;detail::traits::unrefcv_t&lt;T&gt;...&gt;&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___result.html#ga2852fa60e4e34409e35a9f6e8ff5c816" class="m-dox">make_result</a>(</span><span class="m-dox-wrap">T &amp;&amp; ... values) -&gt; Result</span>
+            </dt>
+            <dd>Creates a present result from the given values.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="group___result.html#gae70b4f9c3ca8e28e559363a4bb9fee00" class="m-dox">make_result</a>(</span><span class="m-dox-wrap"><a href="structcti_1_1exception__arg__t.html" class="m-dox">exception_<wbr />arg_<wbr />t</a>,
+              <a href="group___primitives.html#ga9fa0d3597f70a7b9e763639f0b30dee1" class="m-dox">exception_<wbr />t</a> exception) -&gt; <a href="classcti_1_1exceptional__result.html" class="m-dox">exceptional_<wbr />result</a></span>
+            </dt>
+            <dd>Creates an <a href="classcti_1_1exceptional__result.html" class="m-dox">exceptional_<wbr />result</a> from the given exception.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename Visitor, typename... T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___traversal.html#ga02922d0c5bf7a18340069b3500a0cf90" class="m-dox">traverse_pack_async</a>(</span><span class="m-dox-wrap">Visitor&amp;&amp; visitor,
+              T &amp;&amp; ... pack) -&gt; auto</span>
+            </dt>
+            <dd>Traverses the pack with the given visitor in an asynchronous way.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename Mapper, typename... T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___traversal.html#gace27f8127eb5eba0f4ab753daacf6a57" class="m-dox">map_pack</a>(</span><span class="m-dox-wrap">Mapper&amp;&amp; mapper,
+              T &amp;&amp; ... pack) -&gt; decltype(auto)</span>
+            </dt>
+            <dd>Maps the pack with the given mapper.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="group___traversal.html#ga7c14358f4d11803b50ab9687dfcb11c5" class="m-dox">spread_this</a>(</span><span class="m-dox-wrap">T &amp;&amp; ... args) -&gt; detail::traversal::spreading::spread_box&lt;std::decay_t&lt;T&gt;...&gt; <span class="m-label m-flat m-primary">constexpr</span> <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Indicate that the result shall be spread across the parent container if possible. This can be used to create a mapper function used in map_pack that maps one element to an arbitrary count (1:n).</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename Mapper, typename... T&gt;</div>
+              <span class="m-dox-wrap-bumper">void <a href="group___traversal.html#gab497ec8ef4cf8532703fcb9852846a2e" class="m-dox">traverse_pack</a>(</span><span class="m-dox-wrap">Mapper&amp;&amp; mapper,
+              T &amp;&amp; ... pack)</span>
+            </dt>
+            <dd>Traverses the pack with the given visitor.</dd>
+            <dt>
+              <div class="m-dox-template">template&lt;typename... Args&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac13f891e5cf5d6f668ff92bf07c765a6" class="m-dox">use_continuable_ignoring</a>(</span><span class="m-dox-wrap">Args &amp;&amp; ... args) -&gt; auto <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd>Represents a special asio completion token which treats the given asio basic error codes as success instead of failure.</dd>
+          </dl>
+        </section>
+        <section id="var-members">
+          <h2><a href="#var-members">Variables</a></h2>
+          <dl class="m-dox">
+            <dt>
+              <a href="structcti_1_1use__continuable__t.html" class="m-dox">use_<wbr />continuable_<wbr />t</a> <a href="#a0e7f3cb9a77364e61bb38b13007ee10f" class="m-dox">use_continuable</a> <span class="m-label m-flat m-primary">constexpr</span>
+            </dt>
+            <dd>Special value for instance of <a href="structcti_1_1use__continuable__t.html" class="m-dox">use_<wbr />continuable_<wbr />t</a> which performs remapping of asio error codes to align the cancellation behaviour with the library.</dd>
+            <dt>
+              <a href="namespacecti.html#a4d0da7830d56f4e638a2dc23d1bc27db" class="m-dox">use_<wbr />continuable_<wbr />raw_<wbr />t</a> <a href="#a955b9fd72a56b34657664e490f995481" class="m-dox">use_continuable_raw</a> <span class="m-label m-flat m-primary">constexpr</span>
+            </dt>
+            <dd>Special value for instance of use_continuable_raw_t which doesn&#x27;t perform remapping of asio error codes and rethrows the raw error code.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Typedef documentation</h2>
+          <section class="m-dox-details" id="a637f3ade8400faa575b4a6ef584f4431"><div>
+            <h3>
+              using cti::<wbr /><a href="#a637f3ade8400faa575b4a6ef584f4431" class="m-dox-self">asio_error_code_t</a> = detail::asio::error_code_t
+            </h3>
+            <p>The error code type used by your asio distribution.</p>
+<aside class="m-note m-default"><h4>Since</h4><p>4.1.0</p></aside>
+          </div></section>
+          <section class="m-dox-details" id="a33044c007ff02f6324954167003f5c36"><div>
+            <h3>
+              using cti::<wbr /><a href="#a33044c007ff02f6324954167003f5c36" class="m-dox-self">asio_basic_errors_t</a> = detail::asio::basic_errors_t
+            </h3>
+            <p>The basic error code enum used by your asio distribution.</p>
+<aside class="m-note m-default"><h4>Since</h4><p>4.1.0</p></aside>
+          </div></section>
+          <section class="m-dox-details" id="a8681a592a8360d66100a7e72e555bf4f"><div>
+            <h3>
+              using cti::<wbr /><a href="#a8681a592a8360d66100a7e72e555bf4f" class="m-dox-self">asio_system_error_t</a> = detail::asio::system_error_t
+            </h3>
+            <p>The system error type used by your asio distribution.</p>
+<aside class="m-note m-default"><h4>Since</h4><p>4.1.0</p></aside>
+          </div></section>
+          <section class="m-dox-details" id="a4d0da7830d56f4e638a2dc23d1bc27db"><div>
+            <h3>
+              using cti::<wbr /><a href="#a4d0da7830d56f4e638a2dc23d1bc27db" class="m-dox-self">use_continuable_raw_t</a> = <a href="structcti_1_1use__continuable__t.html" class="m-dox">use_<wbr />continuable_<wbr />t</a>&lt;detail::asio::map_none&gt;
+            </h3>
+            <p>Type used as an ASIO completion token to specify an asynchronous operation that should return a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a>.</p>
+<ul><li>Boost 1.70 or asio 1.13.0 is required for the async initiation</li><li>Until boost 1.72 or asio 1.16.0 overhead through an additional type erasure is added. It is recommended to update to those versions.</li></ul><p>The special static variable use_continuable can be appended to any (boost) asio function that accepts a callback to make it return a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a>.</p><pre class="m-code"><span class="cp">#include</span> <span class="cpf">&lt;continuable/continuable.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;continuable/external/asio.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;asio.hpp&gt;</span><span class="cp"></span>
+
+<span class="c1">// ...</span>
+
+<span class="n">asio</span><span class="o">::</span><span class="n">tcp</span><span class="o">::</span><span class="n">resolver</span> <span class="n">resolver</span><span class="p">(...);</span>
+<span class="n">resolver</span><span class="p">.</span><span class="n">async_resolve</span><span class="p">(</span><span class="s">&quot;127.0.0.1&quot;</span><span class="p">,</span> <span class="s">&quot;daytime&quot;</span><span class="p">,</span> <span class="n">cti</span><span class="o">::</span><span class="n">use_continuable</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">then</span><span class="p">([](</span><span class="n">asio</span><span class="o">::</span><span class="n">udp</span><span class="o">::</span><span class="n">resolver</span><span class="o">::</span><span class="n">iterator</span> <span class="n">iterator</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">});</span></pre><aside class="m-note m-warning"><h4>Attention</h4><p><code>asio::error::basic_errors::operation_aborted</code> errors returned by asio are automatically transformed into a default constructed exception type which represents &quot;operation canceled&quot; by the user or program. If you intend to retrieve the full asio::error_code without remapping use the use_continuable_raw_t completion token instead!</p></aside><aside class="m-note m-default"><h4>Since</h4><p>4.0.0</p></aside><p>The raw async completion handler token does not remap the asio error <code>asio::error::basic_errors::operation_aborted</code> to a default constructed exception type.</p><aside class="m-note m-default"><h4>Since</h4><p>4.1.0</p></aside>
+          </div></section>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-dox-details" id="ac13f891e5cf5d6f668ff92bf07c765a6"><div>
+            <h3>
+              <div class="m-dox-template">
+                template&lt;typename... Args&gt;
+              </div>
+              <span class="m-dox-wrap-bumper">auto cti::<wbr /></span><span class="m-dox-wrap"><span class="m-dox-wrap-bumper"><a href="#ac13f891e5cf5d6f668ff92bf07c765a6" class="m-dox-self">use_continuable_ignoring</a>(</span><span class="m-dox-wrap">Args &amp;&amp; ... args) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <p>Represents a special asio completion token which treats the given asio basic error codes as success instead of failure.</p>
+<p><code>asio::error::basic_errors::operation_aborted</code> is mapped as cancellation token.</p><aside class="m-note m-default"><h4>Since</h4><p>4.1.0</p></aside>
+          </div></section>
+        </section>
+        <section>
+          <h2>Variable documentation</h2>
+          <section class="m-dox-details" id="a0e7f3cb9a77364e61bb38b13007ee10f"><div>
+            <h3>
+              <a href="structcti_1_1use__continuable__t.html" class="m-dox">use_<wbr />continuable_<wbr />t</a> cti::<wbr /><a href="#a0e7f3cb9a77364e61bb38b13007ee10f" class="m-dox-self">use_continuable</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+            <p>Special value for instance of <a href="structcti_1_1use__continuable__t.html" class="m-dox">use_<wbr />continuable_<wbr />t</a> which performs remapping of asio error codes to align the cancellation behaviour with the library.</p>
+<ul><li>Boost 1.70 or asio 1.13.0 is required for the async initiation</li><li>Until boost 1.72 or asio 1.16.0 overhead through an additional type erasure is added. It is recommended to update to those versions.</li></ul><p>The special static variable use_continuable can be appended to any (boost) asio function that accepts a callback to make it return a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a>.</p><pre class="m-code"><span class="cp">#include</span> <span class="cpf">&lt;continuable/continuable.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;continuable/external/asio.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;asio.hpp&gt;</span><span class="cp"></span>
+
+<span class="c1">// ...</span>
+
+<span class="n">asio</span><span class="o">::</span><span class="n">tcp</span><span class="o">::</span><span class="n">resolver</span> <span class="n">resolver</span><span class="p">(...);</span>
+<span class="n">resolver</span><span class="p">.</span><span class="n">async_resolve</span><span class="p">(</span><span class="s">&quot;127.0.0.1&quot;</span><span class="p">,</span> <span class="s">&quot;daytime&quot;</span><span class="p">,</span> <span class="n">cti</span><span class="o">::</span><span class="n">use_continuable</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">then</span><span class="p">([](</span><span class="n">asio</span><span class="o">::</span><span class="n">udp</span><span class="o">::</span><span class="n">resolver</span><span class="o">::</span><span class="n">iterator</span> <span class="n">iterator</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">});</span></pre><aside class="m-note m-warning"><h4>Attention</h4><p><code>asio::error::basic_errors::operation_aborted</code> errors returned by asio are automatically transformed into a default constructed exception type which represents &quot;operation canceled&quot; by the user or program. If you intend to retrieve the full asio::error_code without remapping use the use_continuable_raw_t completion token instead!</p></aside><aside class="m-note m-default"><h4>Since</h4><p>4.0.0</p></aside>
+          </div></section>
+          <section class="m-dox-details" id="a955b9fd72a56b34657664e490f995481"><div>
+            <h3>
+              <a href="namespacecti.html#a4d0da7830d56f4e638a2dc23d1bc27db" class="m-dox">use_<wbr />continuable_<wbr />raw_<wbr />t</a> cti::<wbr /><a href="#a955b9fd72a56b34657664e490f995481" class="m-dox-self">use_continuable_raw</a> <span class="m-label m-primary">constexpr</span>
+            </h3>
+            <p>Special value for instance of use_continuable_raw_t which doesn&#x27;t perform remapping of asio error codes and rethrows the raw error code.</p>
+<ul><li>Boost 1.70 or asio 1.13.0 is required for the async initiation</li><li>Until boost 1.72 or asio 1.16.0 overhead through an additional type erasure is added. It is recommended to update to those versions.</li></ul><p>The special static variable use_continuable can be appended to any (boost) asio function that accepts a callback to make it return a <a href="classcti_1_1continuable__base.html" class="m-dox">continuable_<wbr />base</a>.</p><pre class="m-code"><span class="cp">#include</span> <span class="cpf">&lt;continuable/continuable.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;continuable/external/asio.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;asio.hpp&gt;</span><span class="cp"></span>
+
+<span class="c1">// ...</span>
+
+<span class="n">asio</span><span class="o">::</span><span class="n">tcp</span><span class="o">::</span><span class="n">resolver</span> <span class="n">resolver</span><span class="p">(...);</span>
+<span class="n">resolver</span><span class="p">.</span><span class="n">async_resolve</span><span class="p">(</span><span class="s">&quot;127.0.0.1&quot;</span><span class="p">,</span> <span class="s">&quot;daytime&quot;</span><span class="p">,</span> <span class="n">cti</span><span class="o">::</span><span class="n">use_continuable</span><span class="p">)</span>
+  <span class="p">.</span><span class="n">then</span><span class="p">([](</span><span class="n">asio</span><span class="o">::</span><span class="n">udp</span><span class="o">::</span><span class="n">resolver</span><span class="o">::</span><span class="n">iterator</span> <span class="n">iterator</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">});</span></pre><aside class="m-note m-warning"><h4>Attention</h4><p><code>asio::error::basic_errors::operation_aborted</code> errors returned by asio are automatically transformed into a default constructed exception type which represents &quot;operation canceled&quot; by the user or program. If you intend to retrieve the full asio::error_code without remapping use the use_continuable_raw_t completion token instead!</p></aside><aside class="m-note m-default"><h4>Since</h4><p>4.0.0</p></aside><p>The raw async completion handler token does not remap the asio error <code>asio::error::basic_errors::operation_aborted</code> to a default constructed exception type.</p><aside class="m-note m-default"><h4>Since</h4><p>4.1.0</p></aside>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-dox-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-dox-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-dox-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search.js"></script>
+<script src="searchdata.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <b><a
+href="https://github.com/Naios/continuable">continuable</a></b>
+-
+C++14
+allocation
+aware
+futures</br>Copyright
+2015&ndash;2020
+<a
+href="https://github.com/Naios">Denis
+Blank</a>.
+Contact
+the
+author
+via
+<a
+href="mailto:denis.blank@outlook.com">e-mail</a>.</br>Powered
+by
+<a
+href="http://doxygen.org/">Doxygen</a>
+and
+<a
+href="http://mcss.mosra.cz/">m.css</a>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

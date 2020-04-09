@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115514125-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115514125-1');
+  </script>
+
+  <meta charset="UTF-8" />
+  <title>Continuable</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="m-dark+doxygen.compiled.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="terminal.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="atom-one-dark.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#23373B" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a href="index.html" id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">Continuable <span class="m-thin">4.1.0</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li>
+              <a href="tutorial.html">Tutorial</a>
+              <ol>
+                <li><a href="tutorial-creating-continuables.html">Creating continuables</a></li>
+                <li><a href="tutorial-chaining-continuables.html">Chaining continuables</a></li>
+                <li><a href="tutorial-connecting-continuables.html">Connecting continuables</a></li>
+                <li><a href="tutorial-transforming-continuables.html">Transforming continuables</a></li>
+                <li><a href="tutorial-awaiting-continuables.html">Awaiting continuables</a></li>
+                <li><a href="tutorial-promisify-continuables.html">Promisify functions</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="pages.html">Pages</a>
+              <ol>
+                <li><a href="installation.html">Installation</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="configuration.html">Configuration</a></li>
+                <li><a href="changelog.html">Changelog</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="modules.html">Modules</a>
+              <ol>
+                <li><a href="group___base.html">Base</a></li>
+                <li><a href="group___connections.html">Connections</a></li>
+                <li><a href="group___promisify.html">Promisify</a></li>
+                <li><a href="group___testing.html">Testing</a></li>
+                <li><a href="group___types.html">Types</a></li>
+                <li><a href="group___transforms.html">Transforms</a></li>
+                <li><a href="group___traversal.html">Traversal</a></li>
+              </ol>
+            </li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li>
+              <a href="namespacecti.html">cti</a>
+              <ol>
+                <li><a href="namespacecti_1_1transforms.html">cti::transforms</a></li>
+                <li><a href="classcti_1_1continuable__base.html">cti::continuable_base</a></li>
+                <li><a href="classcti_1_1promise__base.html">cti::promise_base</a></li>
+              </ol>
+            </li>
+            <li class="m-show-m"><a href="#search" class="m-dox-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <path d="m6 0c-3.3144 0-6 2.6856-6 6 0 3.3144 2.6856 6 6 6 1.4858 0 2.8463-0.54083 3.8945-1.4355-0.0164 0.33797 0.14734 0.75854 0.5 1.1504l3.2227 3.7891c0.55185 0.6139 1.4517 0.66544 2.002 0.11524 0.55022-0.55022 0.49866-1.4501-0.11524-2.002l-3.7891-3.2246c-0.39184-0.35266-0.81242-0.51469-1.1504-0.5 0.89472-1.0482 1.4355-2.4088 1.4355-3.8945 0-3.3128-2.6856-5.998-6-5.998zm0 1.5625a4.4375 4.4375 0 0 1 4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375 4.4375 4.4375 4.4375 0 0 1-4.4375-4.4375 4.4375 4.4375 0 0 1 4.4375-4.4375z"/>
+            </svg> Search</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none">
+            <li>
+              <a href="https://github.com/Naios/continuable" aria-label="View source on Github"><i class="fa fa-github"></i> Code</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+          <div class="terminal">
+            <div class="fakeMenu">
+              <div class="fakeButtons fakeClose"></div>
+                <div class="fakeButtons fakeMinimize"></div>
+                <div class="fakeButtons fakeZoom"></div>
+              </div>
+            <div class="fakeScreen">
+              <pre><code id="typedterminal" class="cpp"></code></pre>
+            </div>
+          </div>
+          <div class="starbar">
+            <iframe src="https://ghbtns.com/github-btn.html?user=naios&repo=continuable&type=star&count=true" frameborder="0" scrolling="0" width="200px" height="20px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=Naios&type=follow" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+          </div>
+          </br>
+
+          <script src="typed.js"></script>
+          <script src="highlight.min.js"></script>
+          <script src="terminal.js"></script>
+
+<section id="mainpage-overview"><h2><a href="#mainpage-overview">Overview</a></h2><p><strong>Continuable is a C++14 library that provides full support for:</strong></p><ul><li>lazy async continuation chaining based on <strong>callbacks</strong> (<a href="classcti_1_1continuable__base.html#adf02030d7211ffc4610f3bcb13d2a149" class="m-dox">then</a>) and expression templates, callbacks are wrapped nicely as <a href="classcti_1_1promise__base.html" class="m-dox">promises</a>.</li><li><strong>no enforced type-erasure</strong> which means we need <strong>less heap allocations</strong> than comparable libraries, strictly following the <strong>&quot;don&#x27;t
+   pay for what you don&#x27;t use&quot;</strong> principle.</li><li>support for <strong>all, any and sequential connections</strong> between continuables through expressive operator overloads <a href="classcti_1_1continuable__base.html#ad5cbff40fcd03a6451eae06d310f1439" class="m-dox">&amp;&amp;</a>, <a href="classcti_1_1continuable__base.html#ada74584fb95bf00a50d05072e933c144" class="m-dox">||</a> and <a href="classcti_1_1continuable__base.html#abaaaf8a35827456fead299851268760e" class="m-dox">&gt;&gt;</a> as well as free functions <a href="group___connections.html#gaef652b8561f76cad49e83cfa21a71734" class="m-dox">when_<wbr />all</a>, <a href="group___connections.html#ga313760e876d0cbc766b41f6b192544bb" class="m-dox">when_<wbr />any</a> and <a href="group___connections.html#ga481c31024079b6074617c64b16e615dd" class="m-dox">when_<wbr />seq</a>.</li><li>asynchronous <a href="classcti_1_1continuable__base.html#a7001122101ed32f729e39c53d6cb9c7f" class="m-dox">error handling</a> through <a href="classcti_1_1promise__base.html#a449356e97645d44cf4194932cc2006d7" class="m-dox">exceptions</a>, <a href="configuration.html" class="m-dox">error codes</a> and <a href="configuration.html" class="m-dox">user defined types</a>.</li><li><strong>syntactic sugar</strong> for instance: <strong>partial invocation</strong>, <strong>tuple unpacking</strong>, <code>co_await</code> support and <a href="classcti_1_1continuable__base.html#adf02030d7211ffc4610f3bcb13d2a149" class="m-dox">executors</a>.</li><li><strong>encapsuled from any runtime</strong>, larger framework or executors makes it possible to use continuable even in smaller or esoteric usage scenarios.</li></ul></section><section id="mainpage-getting-started"><h2><a href="#mainpage-getting-started">Getting started</a></h2><p>Continuable is a header-only library with zero compilation dependencies. The <a href="installation.html" class="m-dox">Installation</a> and <a href="configuration.html" class="m-dox">Configuration</a> are explained in its own chapter.</p><p>The <a href="tutorial.html" class="m-dox">Tutorial</a> is everything you need in order to get to know the libraries API. Beside of this, there is a detailed in-source documentation provided.</p><p>Continuable follows the semantic versioning schema and changes are listed in the <a href="changelog.html" class="m-dox">Changelog</a>.</p></section><section id="mainpage-contact"><h2><a href="#mainpage-contact">Contributing and Questions</a></h2><p>Through the <a href="https://github.com/Naios/continuable/issues">Github issue tracker</a> you are welcomed to ask for questions, contribute code or request new features. Also I would like to hear your personal opinion about the library design or your personal experience in using the library to improve it.</p><aside class="m-note m-warning"><h4>Attention</h4><p>If you like the library I would be glad if you star it on Github, because it helps other users to find this library.</p></aside><aside class="m-note m-info"><h4>Note</h4><p>If you are using the library in your open-source or commercial project I would highly appreciate if you could give me a short notice so I can add you to a list of projects and companies using this library.</p></aside></section><section id="mainpage-license"><h2><a href="#mainpage-license">License</a></h2><p>Continuable is licensed under the MIT license:</p><blockquote><p>Copyright(c) 2015 - 2020 Denis Blank &lt;denis.blank at outlook dot com&gt;</p><p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files(the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and / or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions :</p><p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p><p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p></blockquote></section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-dox-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-dox-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-dox-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search.js"></script>
+<script src="searchdata.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <b><a
+href="https://github.com/Naios/continuable">continuable</a></b>
+-
+C++14
+allocation
+aware
+futures</br>Copyright
+2015&ndash;2020
+<a
+href="https://github.com/Naios">Denis
+Blank</a>.
+Contact
+the
+author
+via
+<a
+href="mailto:denis.blank@outlook.com">e-mail</a>.</br>Powered
+by
+<a
+href="http://doxygen.org/">Doxygen</a>
+and
+<a
+href="http://mcss.mosra.cz/">m.css</a>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
